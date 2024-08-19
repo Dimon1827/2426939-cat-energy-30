@@ -34,7 +34,9 @@
 .food__definition {
   padding: 0;
   margin: 0;
+  display: inline-block;
   text-align: end;
+  font-style: italic;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special-grey-2;

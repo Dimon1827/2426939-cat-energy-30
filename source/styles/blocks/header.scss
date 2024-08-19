@@ -10,21 +10,16 @@
 
 .header.header--container {
   @media (min-width: $desktop-width) {
-    background-image: image-set(url("../../images/cat-index-desktop@1x.webp") type("image/webp") 1x, url("../../images/cat-index-desktop@2x.webp") type("image/webp") 2x, url("../../images/cat-index-desktop@1x.jpg") type("image/jpg") 1x, url("../../images/cat-index-desktop@2x.jpg") type("image/jpg") 2x), linear-gradient(90deg, $white-color 50%, $bg-basic-green-3 50%);
-    background-position: calc(50% + 360px), top right;
-    background-repeat: no-repeat;
-    background-size: 720px 694px, cover;
+    background-image: linear-gradient(90deg, $white-color 50%, $bg-basic-orange 50%);
   }
 }
 
 .header__wrapper {
-  padding-top: 13px;
-  margin-bottom: 14px;
+  padding-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    column-gap: 93px;
     padding-top: 26px;
     margin-bottom: 65px;
   }
@@ -43,5 +38,13 @@
     @media (min-width: $desktop-width) {
       margin-bottom: 71px;
     }
+  }
+}
+
+.header__logo {
+  max-width: 253px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
   }
 }

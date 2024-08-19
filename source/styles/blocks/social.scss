@@ -41,6 +41,7 @@
   display: block;
   fill: $primary-color;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover .social__image {
     fill: $bg-basic-green;

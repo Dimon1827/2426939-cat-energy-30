@@ -6,7 +6,7 @@
   grid-row: 1/-1;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 567px;
+    grid-template-columns: 587px;
   }
 }
 
@@ -30,5 +30,6 @@
 }
 
 .slider__image-wrapper--after {
-  clip-path: inset(0 0 0 50%);
+  --x: 50%;
+  clip-path: inset(0 0 0 var(--x));
 }

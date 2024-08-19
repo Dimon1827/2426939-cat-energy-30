@@ -1,0 +1,43 @@
+.cart {
+  position: relative;
+  z-index: 3;
+  transition: background-color 0.3s;
+}
+
+.navigation__item--basket:hover .cart-content {
+  @media (min-width: $tablet-width) {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+}
+
+.cart__quantity {
+  position: absolute;
+  left: 5px;
+  top: 2%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: $bg-basic-orange;
+  color: $white-color;
+  font-size: 12px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    top: 10%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: $white-color;
+    color: $black-color;
+    top: 2%;
+  }
+
+  &--color {
+    @media (min-width: $desktop-width) {
+      background: $bg-basic-orange;
+      color: $white-color;
+    }
+  }
+}

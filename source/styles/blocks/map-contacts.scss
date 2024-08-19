@@ -12,9 +12,11 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 140px;
 
 
   @media (min-width: $tablet-width) {
+    width: 160px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -22,11 +24,11 @@
 
 .map-contacts__info {
   line-height: 20px;
+  width: 140px;
+  justify-self: flex-end;
 
   @media (min-width: $tablet-width) {
-    :first-child {
-      margin-bottom: 20px;
-    }
+    width: 160px;
   }
 }
 

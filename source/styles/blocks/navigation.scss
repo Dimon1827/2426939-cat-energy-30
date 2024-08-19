@@ -1,12 +1,4 @@
 .navigation {
-  @media (min-width: $tablet-width) {
-    width: 436px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 475px;
-  }
-
   &--closed {
     @media (max-width: $mobile-width) {
       .navigation__list {
@@ -67,11 +59,10 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 320px;
+      width: 106%;
       height: 1px;
       background-color: $special-grey;
     }
-
 
     @media (min-width: $tablet-width) {
       &::before {
@@ -166,7 +157,7 @@
       right: 0;
       bottom: -8px;
       height: 2px;
-      background-color: $bg-basic-green;
+      background-color: $bg-basic-orange;
     }
   }
 }
@@ -208,5 +199,24 @@
     @media (min-width: $desktop-width) {
       color: $white-color;
     }
+  }
+
+  &--basket {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/images/basket.svg);
+  }
+}
+
+.navigation__item {
+  &--basket {
+    display: flex;
+    color: $black-color;
+    justify-content: center;
+    cursor: pointer;
   }
 }

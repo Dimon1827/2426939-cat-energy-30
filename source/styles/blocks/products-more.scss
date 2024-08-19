@@ -2,6 +2,7 @@
   padding: 25px 0;
   text-align: center;
   position: relative;
+  border-radius: 28px;
 
   @media (min-width: $tablet-width) {
     border: 2px solid $gb-basic-grey;
@@ -66,15 +67,16 @@
 }
 
 .products-more__link {
-  color: $primary-color;
-  background-color: $gb-basic-grey;
+  color: $white-color;
+  background-color: $bg-basic-orange;
   text-transform: uppercase;
   width: 100%;
+  max-width: 420px;
+
 
   &:hover,
   &:active {
-    color: $primary-color;
-    background-color: $special-grey;
+    background-color: $bg-basic-orange-2;
   }
 
   @media (min-width: $tablet-width) {

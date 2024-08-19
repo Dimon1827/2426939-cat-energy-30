@@ -1,1 +1,1 @@
-
+var e=document.querySelector(".form"),r=new Pristine(e,{classTo:"information__label-man",errorTextParent:"information__label-man",errorTextClass:"information__error"});e.addEventListener("submit",o=>{o.preventDefault();let n=r.validate();console.log(n?"\u041C\u043E\u0436\u043D\u043E \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C":"\u0424\u043E\u0440\u043C\u0430 \u043D\u0435\u0432\u0430\u043B\u0438\u0434\u043D\u0430")});

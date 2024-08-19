@@ -1,0 +1,47 @@
+.cart-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  padding-right: 13px;
+  transition: background-color 0.3s;
+}
+
+.cart-product__img {
+  margin-right: 20px;
+  max-width: 112px;
+  max-height: 147px;
+  border-radius: 20px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cart-product__title {
+  max-width: 300px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black-color;
+  margin-bottom: 18px;
+}
+
+.cart-product__price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: $black-color;
+}
+
+.cart-product__delete {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-image: url("../../images/icons/stack.svg#trash-bin-svgrepo-com");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+}
