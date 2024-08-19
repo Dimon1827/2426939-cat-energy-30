@@ -1,0 +1,1 @@
+var e=document.querySelector("[name='admin_email[]']"),o=document.querySelector("[name='Email']"),n=document.querySelector(".order");n.addEventListener("submit",l=>{l.preventDefault(),e.value=o.value,console.log(o.value),console.log(e.value)});
